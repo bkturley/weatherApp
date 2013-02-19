@@ -66,11 +66,12 @@
 
 
 -(void)layoutSubviews{
-    int centerX = self.frame.size.width/2; // @XXX shit, width and height don't adjust for orientation.
-    self.hightemplabel.frame = CGRectMake( centerX, 50, 120, 50);
-    self.curtemplabel.frame = CGRectMake(centerX, 100, 120, 50);
-    self.lowtemplabel.frame = CGRectMake(centerX, 150, 120, 50);
-    self.fetchButton.frame = CGRectMake(centerX, 210, 75, 50);
+    int tempLabelWidth = 120;
+    int centerX = self.bounds.size.width/2;
+    self.hightemplabel.frame = CGRectMake( centerX - tempLabelWidth/2 , 50, tempLabelWidth, 50);
+    self.curtemplabel.frame = CGRectMake(centerX - tempLabelWidth/2 , 100, tempLabelWidth, 50);
+    self.lowtemplabel.frame = CGRectMake(centerX - tempLabelWidth/2 , 150, tempLabelWidth, 50);
+    self.fetchButton.frame = CGRectMake(centerX - tempLabelWidth/2 , 210, 75, 50);
 
 }
 
