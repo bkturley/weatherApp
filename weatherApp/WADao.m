@@ -35,13 +35,13 @@
 }
 
 
-- (NSDictionary*)readJsonResponseAndSaveToProperties:(NSData *)responseData {
+- (void)readJsonResponseAndSaveToProperties:(NSData *)responseData {
     
     
     //parse out the json data
     if (responseData == nil){ //if no network connection
         [[NSNotificationCenter defaultCenter] postNotificationName:kFailedFetchNotification object:nil];
-        return nil;
+        return;
     }
     
     NSError* error;
@@ -61,8 +61,6 @@
     self.hightemp = [NSString stringWithFormat:@"%@",[[[json objectForKey:@"list"]valueForKey:@"main"]valueForKey:@"temp_max"]];
     
     [[NSNotificationCenter defaultCenter] postNotificationName:doaRequestReadyNote object:nil];
-    
-    return json;
     
 }
 
