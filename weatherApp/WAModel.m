@@ -27,7 +27,7 @@
     self.lowtemp = [self.dao.lowtemp floatValue];
     NSLog(@"self.dao.lowtemp");
     NSLog(self.dao.lowtemp);
-    NSLog([NSString stringWithFormat:@"%f",[self.dao.lowtemp floatValue]]);
+    NSLog([NSString stringWithFormat:@"%@",self.dao.lowtemp]); //YES!!!!
     self.hightemp = [self.dao.hightemp floatValue];
     self.avgtemp = [self.dao.avgtemp floatValue];
     [[NSNotificationCenter defaultCenter] postNotificationName:modelRequestReadyNote object:nil];
