@@ -26,15 +26,15 @@
         self.WAModel = [[WAModel alloc] init];
         
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(fetchButtonTapped) name:fetchButtonTappedNote object:nil];
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateView) name:doaRequestReadyNote object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateView) name:modelRequestReadyNote object:nil];
     }
     return self;
 }
 
 -(void) updateView{
-    self.WAView.lowtemplabel.text =  [NSString stringWithFormat: @"%.2f", self.WAModel.lowtemp];
-    self.WAView.curtemplabel.text =  [NSString stringWithFormat: @"%.2f", self.WAModel.avgtemp];
-    self.WAView.hightemplabel.text =  [NSString stringWithFormat: @"%.2f", self.WAModel.hightemp];
+    self.WAView.lowtemplabel.text = [NSString stringWithFormat:@"%@",self.WAModel.lowtemp];
+    self.WAView.curtemplabel.text =  [NSString stringWithFormat:@"%@",self.WAModel.avgtemp];
+    self.WAView.hightemplabel.text =  [NSString stringWithFormat:@"%@",self.WAModel.hightemp];
 }
 
 -(void)fetchButtonTapped{

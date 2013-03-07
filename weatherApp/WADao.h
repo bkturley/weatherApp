@@ -11,9 +11,9 @@
 #define doaRequestReadyNote @"doaRequestReadyNote"
 
 @interface WADao : NSObject
-@property NSString* lowtemp;
-@property NSString* hightemp;
-@property NSString* avgtemp;
+@property NSDecimalNumber* lowtemp;
+@property NSDecimalNumber* hightemp;
+@property NSDecimalNumber* avgtemp;
 
 -(void)refreshDataFromServer;
 @end

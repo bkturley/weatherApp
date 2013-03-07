@@ -28,7 +28,7 @@
             // fetch JSON data
         NSData* data = [NSData dataWithContentsOfURL:kLatestWeatherURL];
         
-            //consume the data on the main thread
+            //consume the JSON data on the main thread
         [self performSelectorOnMainThread:@selector(readJsonResponseAndSaveToProperties:)
                                withObject:data waitUntilDone:YES];
     });
@@ -50,15 +50,16 @@
                           options:kNilOptions
                           error:&error];
     
+    //log entire json response
     //NSArray* list = [json objectForKey:@"list"];
     //NSLog(@"list: %@", list);
     
     //save low, high and avg temps to properties
-    self.lowtemp = [NSString stringWithFormat:@"%@",[[[json objectForKey:@"list"]valueForKey:@"main"]valueForKey:@"temp_min"]];
+    self.lowtemp = [[[[json objectForKey:@"list"]valueForKey:@"main"]valueForKey:@"temp_min"] objectAtIndex:0];
     
-    self.avgtemp = [NSString stringWithFormat:@"%@",[[[json valueForKey:@"list"]valueForKey:@"main"]valueForKey:@"temp"]];
+    self.avgtemp = [[[[json objectForKey:@"list"]valueForKey:@"main"]valueForKey:@"temp"] objectAtIndex:0];
     
-    self.hightemp = [NSString stringWithFormat:@"%@",[[[json objectForKey:@"list"]valueForKey:@"main"]valueForKey:@"temp_max"]];
+    self.hightemp = [[[[json objectForKey:@"list"]valueForKey:@"main"]valueForKey:@"temp_max"] objectAtIndex:0];
     
     [[NSNotificationCenter defaultCenter] postNotificationName:doaRequestReadyNote object:nil];
     

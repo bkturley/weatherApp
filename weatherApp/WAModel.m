@@ -10,7 +10,7 @@
 #import "WADao.h"
 
 @interface WAModel()
-@property WADao* dao;
+@property (nonatomic, strong) WADao* dao;
 @end
 
 @implementation WAModel
@@ -23,20 +23,21 @@
     }
     return  self;
 }
+
+
 -(void) fetchWeatherData{
+    NSDecimal *kelvinOffset = (__bridge NSDecimal *)([NSDecimalNumber decimalNumberWithString:@"273.15"]);
+//    self.lowtemp = [self.dao.lowtemp decimalNumberBySubtracting:kelvinOffset];
     self.lowtemp = [self.dao.lowtemp floatValue];
-    NSLog(@"self.dao.lowtemp");
-    NSLog(self.dao.lowtemp);
-    NSLog([NSString stringWithFormat:@"%@",self.dao.lowtemp]); //YES!!!!
-    self.hightemp = [self.dao.hightemp floatValue];
-    self.avgtemp = [self.dao.avgtemp floatValue];
+//    self.hightemp = [self.dao.hightemp decimalNumberBySubtracting:kelvinOffset];
+    self.hightemp = self.dao.hightemp;
+//    self.avgtemp = [self.dao.avgtemp decimalNumberBySubtracting:kelvinOffset];
+    self.avgtemp = self.dao.avgtemp;
+    
     [[NSNotificationCenter defaultCenter] postNotificationName:modelRequestReadyNote object:nil];
 }
 -(void) updateWeatherFromServer{
     [self.dao refreshDataFromServer];
 }
-
-
-
 
 @end
