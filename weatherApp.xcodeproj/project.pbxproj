@@ -15,6 +15,7 @@
 		C031EE0C16CA822B002B397E /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = C031EE0B16CA822B002B397E /* Tests.m */; };
 		C031EE0F16CA822C002B397E /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C031EE0E16CA822C002B397E /* GHUnitIOS.framework */; };
 		C031EE1316CA822C002B397E /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C031EE1216CA822C002B397E /* libOCMock.a */; };
+		C074659A16F0205D007F7973 /* UIView+_additions.m in Sources */ = {isa = PBXBuildFile; fileRef = C074659916F0205D007F7973 /* UIView+_additions.m */; };
 		C08A794816A132A800266EBC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C08A794716A132A800266EBC /* UIKit.framework */; };
 		C08A794A16A132A800266EBC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C08A794916A132A800266EBC /* Foundation.framework */; };
 		C08A794C16A132A800266EBC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C08A794B16A132A800266EBC /* CoreGraphics.framework */; };
@@ -69,6 +70,8 @@
 		C031EE1916CA822C002B397E /* OCMConstraint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OCMConstraint.h; path = Libraries/OCMock/Headers/OCMock/OCMConstraint.h; sourceTree = "<group>"; };
 		C031EE1A16CA822C002B397E /* OCMockObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OCMockObject.h; path = Libraries/OCMock/Headers/OCMock/OCMockObject.h; sourceTree = "<group>"; };
 		C031EE1B16CA822C002B397E /* OCMockRecorder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OCMockRecorder.h; path = Libraries/OCMock/Headers/OCMock/OCMockRecorder.h; sourceTree = "<group>"; };
+		C074659816F0205D007F7973 /* UIView+_additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+_additions.h"; sourceTree = "<group>"; };
+		C074659916F0205D007F7973 /* UIView+_additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+_additions.m"; sourceTree = "<group>"; };
 		C08A794316A132A800266EBC /* weatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C08A794716A132A800266EBC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C08A794916A132A800266EBC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -277,6 +280,8 @@
 				C093562916C2112B0038091F /* WAView.h */,
 				C093562A16C2112C0038091F /* WAView.m */,
 				C08A796116A132A800266EBC /* weatherApp.xcdatamodeld */,
+				C074659816F0205D007F7973 /* UIView+_additions.h */,
+				C074659916F0205D007F7973 /* UIView+_additions.m */,
 			);
 			path = weatherApp;
 			sourceTree = "<group>";
@@ -442,6 +447,7 @@
 				C093562716C20D3D0038091F /* WAModel.m in Sources */,
 				C093562B16C2112C0038091F /* WAView.m in Sources */,
 				C093562F16C2141C0038091F /* WADao.m in Sources */,
+				C074659A16F0205D007F7973 /* UIView+_additions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,6 +588,7 @@
 					"\"$(SRCROOT)\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -597,6 +604,7 @@
 					"\"$(SRCROOT)\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
