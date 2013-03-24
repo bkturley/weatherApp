@@ -12,7 +12,7 @@
 #define modelRequestReadyNote @"modelRequestReadyNote"
 
 @interface WAModel : NSObject
-@property float lowtemp;
+@property NSDecimalNumber* lowtemp;
 @property NSDecimalNumber* hightemp;
 @property NSDecimalNumber* avgtemp;
 -(void) updateWeatherFromServer;
