@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIView (_swizzle)
+@interface UIView (swizzle)
 + (void) swizzle;
 @end

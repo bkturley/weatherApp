@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "UIView+_swizzle.h"
+#import "UIView+swizzle.h"
 #import "WAAppDelegate.h"
 
 int main(int argc, char *argv[])

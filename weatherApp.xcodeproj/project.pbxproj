@@ -48,7 +48,7 @@
 		C093562F16C2141C0038091F /* WADao.m in Sources */ = {isa = PBXBuildFile; fileRef = C093562E16C2141B0038091F /* WADao.m */; };
 		C0EC66AF170078DD0063E49E /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C031EE1216CA822C002B397E /* libOCMock.a */; };
 		C0EC66D81700E6220063E49E /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = C0EC66D71700E6220063E49E /* JRSwizzle.m */; };
-		C0EC66DB1700E9710063E49E /* UIView+_swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = C0EC66DA1700E9710063E49E /* UIView+_swizzle.m */; };
+		C0EC66DB1700E9710063E49E /* UIView+swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = C0EC66DA1700E9710063E49E /* UIView+swizzle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -115,8 +115,8 @@
 		C093562E16C2141B0038091F /* WADao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WADao.m; sourceTree = "<group>"; };
 		C0EC66D61700E6220063E49E /* JRSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRSwizzle.h; sourceTree = "<group>"; };
 		C0EC66D71700E6220063E49E /* JRSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRSwizzle.m; sourceTree = "<group>"; };
-		C0EC66D91700E9710063E49E /* UIView+_swizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+_swizzle.h"; sourceTree = "<group>"; };
-		C0EC66DA1700E9710063E49E /* UIView+_swizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+_swizzle.m"; sourceTree = "<group>"; };
+		C0EC66D91700E9710063E49E /* UIView+swizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+swizzle.h"; sourceTree = "<group>"; };
+		C0EC66DA1700E9710063E49E /* UIView+swizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+swizzle.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -287,8 +287,8 @@
 				C093562916C2112B0038091F /* WAView.h */,
 				C093562A16C2112C0038091F /* WAView.m */,
 				C08A796116A132A800266EBC /* weatherApp.xcdatamodeld */,
-				C0EC66D91700E9710063E49E /* UIView+_swizzle.h */,
-				C0EC66DA1700E9710063E49E /* UIView+_swizzle.m */,
+				C0EC66D91700E9710063E49E /* UIView+swizzle.h */,
+				C0EC66DA1700E9710063E49E /* UIView+swizzle.m */,
 			);
 			path = weatherApp;
 			sourceTree = "<group>";
@@ -455,7 +455,7 @@
 				C093562B16C2112C0038091F /* WAView.m in Sources */,
 				C093562F16C2141C0038091F /* WADao.m in Sources */,
 				C0EC66D81700E6220063E49E /* JRSwizzle.m in Sources */,
-				C0EC66DB1700E9710063E49E /* UIView+_swizzle.m in Sources */,
+				C0EC66DB1700E9710063E49E /* UIView+swizzle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

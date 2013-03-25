@@ -6,10 +6,10 @@
 //  Copyright (c) 2013 BKTurley. All rights reserved.
 //
 
-#import "UIView+_swizzle.h"
+#import "UIView+swizzle.h"
 #import "JRSwizzle.h"
 
-@implementation UIView (_swizzle)
+@implementation UIView (swizzle)
 + (void) swizzle
 {
 	[UIView jr_swizzleMethod:@selector(initWithFrame:) withMethod:@selector(initWithFrame_swizzle:) error:nil];
