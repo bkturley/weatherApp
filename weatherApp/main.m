@@ -7,12 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "UIView+_swizzle.h"
 #import "WAAppDelegate.h"
 
 int main(int argc, char *argv[])
 {
     @autoreleasepool {
+        [UIView swizzle];
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([WAAppDelegate class]));
     }
 }

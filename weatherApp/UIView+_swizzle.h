@@ -1,13 +1,13 @@
 //
-//  UIView+_additions.h
+//  UIView+_swizzle.h
 //  weatherApp
 //
-//  Created by BKTurley on 3/12/13.
+//  Created by BKTurley on 3/25/13.
 //  Copyright (c) 2013 BKTurley. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface UIView (_additions)
-
+@interface UIView (_swizzle)
++ (void) swizzle;
 @end
