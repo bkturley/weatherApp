@@ -15,6 +15,41 @@
 		C031EE0C16CA822B002B397E /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = C031EE0B16CA822B002B397E /* Tests.m */; };
 		C031EE0F16CA822C002B397E /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C031EE0E16CA822C002B397E /* GHUnitIOS.framework */; };
 		C031EE1316CA822C002B397E /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C031EE1216CA822C002B397E /* libOCMock.a */; };
+		C04636A71703D1900035F658 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C08A795516A132A800266EBC /* main.m */; };
+		C04636A81703D1900035F658 /* WAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C08A795916A132A800266EBC /* WAAppDelegate.m */; };
+		C04636A91703D1900035F658 /* weatherApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C08A796116A132A800266EBC /* weatherApp.xcdatamodeld */; };
+		C04636AA1703D1900035F658 /* WARootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C08A798316A3893B00266EBC /* WARootViewController.m */; };
+		C04636AB1703D1900035F658 /* WAModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C093562616C20D3C0038091F /* WAModel.m */; };
+		C04636AC1703D1900035F658 /* WAView.m in Sources */ = {isa = PBXBuildFile; fileRef = C093562A16C2112C0038091F /* WAView.m */; };
+		C04636AD1703D1900035F658 /* WADao.m in Sources */ = {isa = PBXBuildFile; fileRef = C093562E16C2141B0038091F /* WADao.m */; };
+		C04636AE1703D1900035F658 /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = C0EC66D71700E6220063E49E /* JRSwizzle.m */; };
+		C04636AF1703D1900035F658 /* UIView+swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = C0EC66DA1700E9710063E49E /* UIView+swizzle.m */; };
+		C04636B11703D1900035F658 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C08A794716A132A800266EBC /* UIKit.framework */; };
+		C04636B21703D1900035F658 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C08A794916A132A800266EBC /* Foundation.framework */; };
+		C04636B31703D1900035F658 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C08A794B16A132A800266EBC /* CoreGraphics.framework */; };
+		C04636B41703D1900035F658 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C08A794D16A132A800266EBC /* CoreData.framework */; };
+		C04636B51703D1900035F658 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C031EDB216C9EDE3002B397E /* libOCMock.a */; };
+		C04636B61703D1900035F658 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C031EE1216CA822C002B397E /* libOCMock.a */; };
+		C04636B81703D1900035F658 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C08A795216A132A800266EBC /* InfoPlist.strings */; };
+		C04636B91703D1900035F658 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C08A795B16A132A800266EBC /* Default.png */; };
+		C04636BA1703D1900035F658 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C08A795D16A132A800266EBC /* Default@2x.png */; };
+		C04636BB1703D1900035F658 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C08A795F16A132A800266EBC /* Default-568h@2x.png */; };
+		C04636BC1703D1900035F658 /* chance storm-day.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C08A798616A3A0C400266EBC /* chance storm-day.jpg */; };
+		C04636BD1703D1900035F658 /* chance-showers-day.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C08A798716A3A0C400266EBC /* chance-showers-day.jpg */; };
+		C04636BE1703D1900035F658 /* fair-day.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C08A798816A3A0C400266EBC /* fair-day.jpg */; };
+		C04636BF1703D1900035F658 /* few-clouds-day.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C08A798916A3A0C400266EBC /* few-clouds-day.jpg */; };
+		C04636C01703D1900035F658 /* fog-day.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C08A798A16A3A0C400266EBC /* fog-day.jpg */; };
+		C04636C11703D1900035F658 /* freezing-rain-day.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C08A798B16A3A0C400266EBC /* freezing-rain-day.jpg */; };
+		C04636C21703D1900035F658 /* funnel-cloud-day.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C08A798C16A3A0C400266EBC /* funnel-cloud-day.jpg */; };
+		C04636C31703D1900035F658 /* hail.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C08A798D16A3A0C400266EBC /* hail.jpg */; };
+		C04636C41703D1900035F658 /* heavy-rain-day.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C08A798E16A3A0C400266EBC /* heavy-rain-day.jpg */; };
+		C04636C51703D1900035F658 /* mostly-cloudy-day.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C08A798F16A3A0C400266EBC /* mostly-cloudy-day.jpg */; };
+		C04636C61703D1900035F658 /* overcast-day.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C08A799016A3A0C400266EBC /* overcast-day.jpg */; };
+		C04636C71703D1900035F658 /* partly-cloudy-day.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C08A799116A3A0C400266EBC /* partly-cloudy-day.jpg */; };
+		C04636C81703D1900035F658 /* rain-day.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C08A799216A3A0C400266EBC /* rain-day.jpg */; };
+		C04636C91703D1900035F658 /* snow-day.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C08A799316A3A0C400266EBC /* snow-day.jpg */; };
+		C04636CA1703D1900035F658 /* storm-day.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C08A799416A3A0C400266EBC /* storm-day.jpg */; };
+		C04636CB1703D1900035F658 /* windy-day.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C08A799516A3A0C400266EBC /* windy-day.jpg */; };
 		C08A794816A132A800266EBC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C08A794716A132A800266EBC /* UIKit.framework */; };
 		C08A794A16A132A800266EBC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C08A794916A132A800266EBC /* Foundation.framework */; };
 		C08A794C16A132A800266EBC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C08A794B16A132A800266EBC /* CoreGraphics.framework */; };
@@ -72,6 +107,11 @@
 		C031EE1916CA822C002B397E /* OCMConstraint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OCMConstraint.h; path = Libraries/OCMock/Headers/OCMock/OCMConstraint.h; sourceTree = "<group>"; };
 		C031EE1A16CA822C002B397E /* OCMockObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OCMockObject.h; path = Libraries/OCMock/Headers/OCMock/OCMockObject.h; sourceTree = "<group>"; };
 		C031EE1B16CA822C002B397E /* OCMockRecorder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OCMockRecorder.h; path = Libraries/OCMock/Headers/OCMock/OCMockRecorder.h; sourceTree = "<group>"; };
+		C046369D1703CFD90035F658 /* layoutTarget-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "layoutTarget-Prefix.pch"; sourceTree = "<group>"; };
+		C046369E1703CFD90035F658 /* layoutTarget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = layoutTarget.h; sourceTree = "<group>"; };
+		C04636A01703CFD90035F658 /* layoutTarget.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = layoutTarget.m; sourceTree = "<group>"; };
+		C04636CF1703D1900035F658 /* weatherApp copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "weatherApp copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C04636D01703D1900035F658 /* weatherApp copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "weatherApp copy-Info.plist"; path = "/Users/bkturley/workspace/weatherApp/weatherApp copy-Info.plist"; sourceTree = "<absolute>"; };
 		C08A794316A132A800266EBC /* weatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C08A794716A132A800266EBC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C08A794916A132A800266EBC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -129,6 +169,19 @@
 				C031EE0316CA822A002B397E /* CoreGraphics.framework in Frameworks */,
 				C031EE0F16CA822C002B397E /* GHUnitIOS.framework in Frameworks */,
 				C031EE1316CA822C002B397E /* libOCMock.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C04636B01703D1900035F658 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C04636B11703D1900035F658 /* UIKit.framework in Frameworks */,
+				C04636B21703D1900035F658 /* Foundation.framework in Frameworks */,
+				C04636B31703D1900035F658 /* CoreGraphics.framework in Frameworks */,
+				C04636B41703D1900035F658 /* CoreData.framework in Frameworks */,
+				C04636B51703D1900035F658 /* libOCMock.a in Frameworks */,
+				C04636B61703D1900035F658 /* libOCMock.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,15 +289,35 @@
 			name = OCMock;
 			sourceTree = "<group>";
 		};
+		C046369B1703CFD90035F658 /* layoutTarget */ = {
+			isa = PBXGroup;
+			children = (
+				C046369E1703CFD90035F658 /* layoutTarget.h */,
+				C04636A01703CFD90035F658 /* layoutTarget.m */,
+				C046369C1703CFD90035F658 /* Supporting Files */,
+			);
+			path = layoutTarget;
+			sourceTree = "<group>";
+		};
+		C046369C1703CFD90035F658 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C046369D1703CFD90035F658 /* layoutTarget-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		C08A793816A132A800266EBC = {
 			isa = PBXGroup;
 			children = (
+				C046369B1703CFD90035F658 /* layoutTarget */,
 				C08A794616A132A800266EBC /* Frameworks */,
 				C08A79D416A79FCC00266EBC /* Libraries */,
 				C031EDB616C9EE5B002B397E /* OCMock */,
 				C08A794416A132A800266EBC /* Products */,
 				C031EE0416CA822A002B397E /* Tests */,
 				C08A794F16A132A800266EBC /* weatherApp */,
+				C04636D01703D1900035F658 /* weatherApp copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -253,6 +326,7 @@
 			children = (
 				C08A794316A132A800266EBC /* weatherApp.app */,
 				C031EDFF16CA822A002B397E /* Tests.app */,
+				C04636CF1703D1900035F658 /* weatherApp copy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -351,6 +425,23 @@
 			productReference = C031EDFF16CA822A002B397E /* Tests.app */;
 			productType = "com.apple.product-type.application";
 		};
+		C04636A51703D1900035F658 /* layout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C04636CC1703D1900035F658 /* Build configuration list for PBXNativeTarget "layout" */;
+			buildPhases = (
+				C04636A61703D1900035F658 /* Sources */,
+				C04636B01703D1900035F658 /* Frameworks */,
+				C04636B71703D1900035F658 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = layout;
+			productName = weatherApp;
+			productReference = C04636CF1703D1900035F658 /* weatherApp copy.app */;
+			productType = "com.apple.product-type.application";
+		};
 		C08A794216A132A800266EBC /* weatherApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C08A797C16A132A800266EBC /* Build configuration list for PBXNativeTarget "weatherApp" */;
@@ -392,6 +483,7 @@
 			targets = (
 				C08A794216A132A800266EBC /* weatherApp */,
 				C031EDFE16CA822A002B397E /* Tests */,
+				C04636A51703D1900035F658 /* layout */,
 			);
 		};
 /* End PBXProject section */
@@ -401,6 +493,33 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C04636B71703D1900035F658 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C04636B81703D1900035F658 /* InfoPlist.strings in Resources */,
+				C04636B91703D1900035F658 /* Default.png in Resources */,
+				C04636BA1703D1900035F658 /* Default@2x.png in Resources */,
+				C04636BB1703D1900035F658 /* Default-568h@2x.png in Resources */,
+				C04636BC1703D1900035F658 /* chance storm-day.jpg in Resources */,
+				C04636BD1703D1900035F658 /* chance-showers-day.jpg in Resources */,
+				C04636BE1703D1900035F658 /* fair-day.jpg in Resources */,
+				C04636BF1703D1900035F658 /* few-clouds-day.jpg in Resources */,
+				C04636C01703D1900035F658 /* fog-day.jpg in Resources */,
+				C04636C11703D1900035F658 /* freezing-rain-day.jpg in Resources */,
+				C04636C21703D1900035F658 /* funnel-cloud-day.jpg in Resources */,
+				C04636C31703D1900035F658 /* hail.jpg in Resources */,
+				C04636C41703D1900035F658 /* heavy-rain-day.jpg in Resources */,
+				C04636C51703D1900035F658 /* mostly-cloudy-day.jpg in Resources */,
+				C04636C61703D1900035F658 /* overcast-day.jpg in Resources */,
+				C04636C71703D1900035F658 /* partly-cloudy-day.jpg in Resources */,
+				C04636C81703D1900035F658 /* rain-day.jpg in Resources */,
+				C04636C91703D1900035F658 /* snow-day.jpg in Resources */,
+				C04636CA1703D1900035F658 /* storm-day.jpg in Resources */,
+				C04636CB1703D1900035F658 /* windy-day.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +559,22 @@
 			files = (
 				C031EE0916CA822B002B397E /* GHUnitIOSTestMain.m in Sources */,
 				C031EE0C16CA822B002B397E /* Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C04636A61703D1900035F658 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C04636A71703D1900035F658 /* main.m in Sources */,
+				C04636A81703D1900035F658 /* WAAppDelegate.m in Sources */,
+				C04636A91703D1900035F658 /* weatherApp.xcdatamodeld in Sources */,
+				C04636AA1703D1900035F658 /* WARootViewController.m in Sources */,
+				C04636AB1703D1900035F658 /* WAModel.m in Sources */,
+				C04636AC1703D1900035F658 /* WAView.m in Sources */,
+				C04636AD1703D1900035F658 /* WADao.m in Sources */,
+				C04636AE1703D1900035F658 /* JRSwizzle.m in Sources */,
+				C04636AF1703D1900035F658 /* UIView+swizzle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -534,6 +669,47 @@
 			};
 			name = Release;
 		};
+		C04636CD1703D1900035F658 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "weatherApp/weatherApp-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"LAYOUT=1",
+				);
+				INFOPLIST_FILE = "weatherApp copy-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/Tests/Libraries/OCMock\"",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "weatherApp copy";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C04636CE1703D1900035F658 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "weatherApp/weatherApp-Prefix.pch";
+				INFOPLIST_FILE = "weatherApp copy-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/Tests/Libraries/OCMock\"",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "weatherApp copy";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 		C08A797A16A132A800266EBC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -545,6 +721,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				EXCLUDED_SOURCE_FILE_NAMES = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -573,6 +750,12 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				EXCLUDED_SOURCE_FILE_NAMES = (
+					JRSwizzle.h,
+					JRSwizzle.m,
+					"UIView+swizzle.h",
+					"UIView+swizzle.m",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
@@ -629,6 +812,15 @@
 			buildConfigurations = (
 				C031EE1D16CA822C002B397E /* Debug */,
 				C031EE1E16CA822C002B397E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C04636CC1703D1900035F658 /* Build configuration list for PBXNativeTarget "layout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C04636CD1703D1900035F658 /* Debug */,
+				C04636CE1703D1900035F658 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

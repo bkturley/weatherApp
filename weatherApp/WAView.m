@@ -72,6 +72,7 @@
     self.curtemplabel.frame = CGRectMake(centerX - tempLabelWidth/2 , 100, tempLabelWidth, 50);
     self.lowtemplabel.frame = CGRectMake(centerX - tempLabelWidth/2 , 150, tempLabelWidth, 50);
     self.fetchButton.frame = CGRectMake(centerX - tempLabelWidth/2 , 210, 75, 50);
+    [self.fetchButton setFrame:CGRectMake(centerX - tempLabelWidth/2 , 210, 75, 50)];
 
 }
 

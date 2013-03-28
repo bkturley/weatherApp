@@ -26,7 +26,7 @@
 
 
 -(void) fetchWeatherData{
-    NSDecimal *kelvinOffset = (__bridge NSDecimal *)([NSDecimalNumber decimalNumberWithString:@"273.15"]);
+        //    NSDecimal *kelvinOffset = (__bridge NSDecimal *)([NSDecimalNumber decimalNumberWithString:@"273.15"]);
 //    self.lowtemp = [self.dao.lowtemp decimalNumberBySubtracting:kelvinOffset];
     self.lowtemp = self.dao.lowtemp;
 //    self.hightemp = [self.dao.hightemp decimalNumberBySubtracting:kelvinOffset];

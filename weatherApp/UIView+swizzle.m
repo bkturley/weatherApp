@@ -8,11 +8,14 @@
 
 #import "UIView+swizzle.h"
 #import "JRSwizzle.h"
+#import <QuartzCore/QuartzCore.h>
 
 @implementation UIView (swizzle)
 + (void) swizzle
 {
-	[UIView jr_swizzleMethod:@selector(initWithFrame:) withMethod:@selector(initWithFrame_swizzle:) error:nil];
+    [UIView jr_swizzleMethod:@selector(initWithFrame:) withMethod:@selector(initWithFrame_swizzle:) error:nil];
+    
+    [UIView jr_swizzleMethod:@selector(layoutSubviews) withMethod:@selector(layoutSubviews_swizzle) error:nil];
 }
 
 - (id) initWithFrame_swizzle:(CGRect) frame
@@ -24,23 +27,47 @@
 	id result = [self initWithFrame:frame];
     
         //add our label subview
-    UILabel* fooLabel = [[UILabel alloc] initWithFrame:CGRectZero];
+    UILabel* classNameLabel = [[UILabel alloc] initWithFrame:CGRectZero];
 
-    fooLabel.text = [[result class] description];
-    fooLabel.font = [UIFont systemFontOfSize:9];
-    fooLabel.alpha = .5;
-    fooLabel.backgroundColor = [UIColor clearColor];
-    [fooLabel sizeToFit];
-    [result addSubview:fooLabel];
+    NSString *classNameString = [[result class] description];
+    classNameLabel.text = classNameString;
     
+    //if super.backgroundcolor isn't a shade of red
+    classNameLabel.textColor = [UIColor redColor];
+    //else
+    //classNameLabel.textColor = [UIColor whiteColor];
+    
+    classNameLabel.font = [UIFont fontWithName:@"Verenda" size:90];
+    classNameLabel.backgroundColor = [UIColor clearColor];
+    classNameLabel.adjustsFontSizeToFitWidth = YES;
+
+        //[classNameLabel setAutoresizingMask:UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight];
+    
+    [result addSubview:classNameLabel];
+    
+    
+        // red boarder around all views
+    self.layer.borderColor = [UIColor redColor].CGColor;
+    self.layer.borderWidth = 1.0f;
     
         //swizzle back to overridden implementaion
 	[UIView jr_swizzleMethod:@selector(initWithFrame:) withMethod:@selector(initWithFrame_swizzle:) error:nil];
 
-    
-        //[result setBackgroundColor:[UIColor blueColor]];
-    
+        //@TODO -
+        //[self setBackgroundColor:[UIColor randomColor]];
+        // or
+        //[self setBackgroundColor:[UIColor prevcolor++]];
+
 	return result;
+}
+
+-(void) layoutSubviews_swizzle{
+    [UIView jr_swizzleMethod:@selector(layoutSubviews) withMethod:@selector(layoutSubviews_swizzle) error:nil];
+    
+        //do stuff
+    
+    
+    [UIView jr_swizzleMethod:@selector(layoutSubviews) withMethod:@selector(layoutSubviews_swizzle) error:nil];
 }
 
 @end

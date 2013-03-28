@@ -13,7 +13,10 @@
 int main(int argc, char *argv[])
 {
     @autoreleasepool {
+        #ifdef LAYOUT
         [UIView swizzle];
+        #endif
+
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([WAAppDelegate class]));
     }
 }
