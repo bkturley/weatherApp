@@ -31,6 +31,7 @@
                                                                         0,
                                                                         frame.size.width,   frame.size.height) ];
 
+    
     NSString *classNameString = [[result class] description];
     classNameLabel.text = classNameString;
     classNameLabel.alpha = .6;
@@ -40,7 +41,7 @@
     //else
     //classNameLabel.textColor = [UIColor whiteColor];
     
-    classNameLabel.font = [UIFont fontWithName:@"Marker Felt" size:90];
+    classNameLabel.font = [UIFont fontWithName:@"Marker Felt" size:18];
     classNameLabel.backgroundColor = [UIColor clearColor];
     classNameLabel.adjustsFontSizeToFitWidth = YES;
 
