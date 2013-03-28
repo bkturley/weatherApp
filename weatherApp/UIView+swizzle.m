@@ -27,21 +27,24 @@
 	id result = [self initWithFrame:frame];
     
         //add our label subview
-    UILabel* classNameLabel = [[UILabel alloc] initWithFrame:CGRectZero];
+    UILabel* classNameLabel = [[UILabel alloc] initWithFrame:CGRectMake(0,
+                                                                        0,
+                                                                        frame.size.width,   frame.size.height) ];
 
     NSString *classNameString = [[result class] description];
     classNameLabel.text = classNameString;
+    classNameLabel.alpha = .6;
     
     //if super.backgroundcolor isn't a shade of red
     classNameLabel.textColor = [UIColor redColor];
     //else
     //classNameLabel.textColor = [UIColor whiteColor];
     
-    classNameLabel.font = [UIFont fontWithName:@"Verenda" size:90];
+    classNameLabel.font = [UIFont fontWithName:@"Marker Felt" size:90];
     classNameLabel.backgroundColor = [UIColor clearColor];
     classNameLabel.adjustsFontSizeToFitWidth = YES;
 
-        //[classNameLabel setAutoresizingMask:UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight];
+    [classNameLabel setAutoresizingMask:UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight];
     
     [result addSubview:classNameLabel];
     
