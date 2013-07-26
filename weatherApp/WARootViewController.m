@@ -21,7 +21,9 @@
     self = [super init];
     if (self) {
         // Custom initialization
-        self.WAView = [[WAView alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame]];
+
+        self.WAView = [[WAView alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame]
+                                  andViewController:self];
         self.view = self.WAView;
         self.WAModel = [[WAModel alloc] init];
         

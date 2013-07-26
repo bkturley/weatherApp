@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WARootViewController.h"
 
 #define fetchButtonTappedNote @"fetchButtonTappedNote"
 
@@ -15,4 +16,6 @@
 @property UILabel *lowtemplabel;
 @property UILabel *curtemplabel;
 @property UILabel *hightemplabel;
+- (id)initWithFrame:(CGRect)frame andViewController:(WARootViewController*)VC;
+
 @end

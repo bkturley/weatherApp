@@ -11,10 +11,6 @@
 		C031EE0116CA822A002B397E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C08A794716A132A800266EBC /* UIKit.framework */; };
 		C031EE0216CA822A002B397E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C08A794916A132A800266EBC /* Foundation.framework */; };
 		C031EE0316CA822A002B397E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C08A794B16A132A800266EBC /* CoreGraphics.framework */; };
-		C031EE0916CA822B002B397E /* GHUnitIOSTestMain.m in Sources */ = {isa = PBXBuildFile; fileRef = C031EE0816CA822B002B397E /* GHUnitIOSTestMain.m */; };
-		C031EE0C16CA822B002B397E /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = C031EE0B16CA822B002B397E /* Tests.m */; };
-		C031EE0F16CA822C002B397E /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C031EE0E16CA822C002B397E /* GHUnitIOS.framework */; };
-		C031EE1316CA822C002B397E /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C031EE1216CA822C002B397E /* libOCMock.a */; };
 		C04636A71703D1900035F658 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C08A795516A132A800266EBC /* main.m */; };
 		C04636A81703D1900035F658 /* WAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C08A795916A132A800266EBC /* WAAppDelegate.m */; };
 		C04636A91703D1900035F658 /* weatherApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C08A796116A132A800266EBC /* weatherApp.xcdatamodeld */; };
@@ -29,7 +25,6 @@
 		C04636B31703D1900035F658 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C08A794B16A132A800266EBC /* CoreGraphics.framework */; };
 		C04636B41703D1900035F658 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C08A794D16A132A800266EBC /* CoreData.framework */; };
 		C04636B51703D1900035F658 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C031EDB216C9EDE3002B397E /* libOCMock.a */; };
-		C04636B61703D1900035F658 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C031EE1216CA822C002B397E /* libOCMock.a */; };
 		C04636B81703D1900035F658 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C08A795216A132A800266EBC /* InfoPlist.strings */; };
 		C04636B91703D1900035F658 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C08A795B16A132A800266EBC /* Default.png */; };
 		C04636BA1703D1900035F658 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C08A795D16A132A800266EBC /* Default@2x.png */; };
@@ -81,7 +76,6 @@
 		C093562716C20D3D0038091F /* WAModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C093562616C20D3C0038091F /* WAModel.m */; };
 		C093562B16C2112C0038091F /* WAView.m in Sources */ = {isa = PBXBuildFile; fileRef = C093562A16C2112C0038091F /* WAView.m */; };
 		C093562F16C2141C0038091F /* WADao.m in Sources */ = {isa = PBXBuildFile; fileRef = C093562E16C2141B0038091F /* WADao.m */; };
-		C0EC66AF170078DD0063E49E /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C031EE1216CA822C002B397E /* libOCMock.a */; };
 		C0EC66D81700E6220063E49E /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = C0EC66D71700E6220063E49E /* JRSwizzle.m */; };
 		C0EC66DB1700E9710063E49E /* UIView+swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = C0EC66DA1700E9710063E49E /* UIView+swizzle.m */; };
 /* End PBXBuildFile section */
@@ -95,23 +89,7 @@
 		C031EDBB16C9EE5B002B397E /* OCMockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockObject.h; sourceTree = "<group>"; };
 		C031EDBC16C9EE5B002B397E /* OCMockRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockRecorder.h; sourceTree = "<group>"; };
 		C031EDFF16CA822A002B397E /* Tests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tests.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C031EE0616CA822B002B397E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C031EE0716CA822B002B397E /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
-		C031EE0816CA822B002B397E /* GHUnitIOSTestMain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHUnitIOSTestMain.m; sourceTree = "<group>"; };
-		C031EE0B16CA822B002B397E /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Tests.m; path = "Test Cases/Tests.m"; sourceTree = "<group>"; };
-		C031EE0E16CA822C002B397E /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GHUnitIOS.framework; path = Frameworks/GHUnitIOS.framework; sourceTree = "<group>"; };
-		C031EE1216CA822C002B397E /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOCMock.a; path = Libraries/OCMock/libOCMock.a; sourceTree = "<group>"; };
-		C031EE1616CA822C002B397E /* OCMock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OCMock.h; path = Libraries/OCMock/Headers/OCMock/OCMock.h; sourceTree = "<group>"; };
-		C031EE1716CA822C002B397E /* NSNotificationCenter+OCMAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSNotificationCenter+OCMAdditions.h"; path = "Libraries/OCMock/Headers/OCMock/NSNotificationCenter+OCMAdditions.h"; sourceTree = "<group>"; };
-		C031EE1816CA822C002B397E /* OCMArg.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OCMArg.h; path = Libraries/OCMock/Headers/OCMock/OCMArg.h; sourceTree = "<group>"; };
-		C031EE1916CA822C002B397E /* OCMConstraint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OCMConstraint.h; path = Libraries/OCMock/Headers/OCMock/OCMConstraint.h; sourceTree = "<group>"; };
-		C031EE1A16CA822C002B397E /* OCMockObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OCMockObject.h; path = Libraries/OCMock/Headers/OCMock/OCMockObject.h; sourceTree = "<group>"; };
-		C031EE1B16CA822C002B397E /* OCMockRecorder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OCMockRecorder.h; path = Libraries/OCMock/Headers/OCMock/OCMockRecorder.h; sourceTree = "<group>"; };
-		C046369D1703CFD90035F658 /* layoutTarget-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "layoutTarget-Prefix.pch"; sourceTree = "<group>"; };
-		C046369E1703CFD90035F658 /* layoutTarget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = layoutTarget.h; sourceTree = "<group>"; };
-		C04636A01703CFD90035F658 /* layoutTarget.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = layoutTarget.m; sourceTree = "<group>"; };
 		C04636CF1703D1900035F658 /* weatherApp copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "weatherApp copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C04636D01703D1900035F658 /* weatherApp copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "weatherApp copy-Info.plist"; path = "/Users/bkturley/workspace/weatherApp/weatherApp copy-Info.plist"; sourceTree = "<absolute>"; };
 		C08A794316A132A800266EBC /* weatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C08A794716A132A800266EBC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C08A794916A132A800266EBC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -167,8 +145,6 @@
 				C031EE0116CA822A002B397E /* UIKit.framework in Frameworks */,
 				C031EE0216CA822A002B397E /* Foundation.framework in Frameworks */,
 				C031EE0316CA822A002B397E /* CoreGraphics.framework in Frameworks */,
-				C031EE0F16CA822C002B397E /* GHUnitIOS.framework in Frameworks */,
-				C031EE1316CA822C002B397E /* libOCMock.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,7 +157,6 @@
 				C04636B31703D1900035F658 /* CoreGraphics.framework in Frameworks */,
 				C04636B41703D1900035F658 /* CoreData.framework in Frameworks */,
 				C04636B51703D1900035F658 /* libOCMock.a in Frameworks */,
-				C04636B61703D1900035F658 /* libOCMock.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,7 +169,6 @@
 				C08A794C16A132A800266EBC /* CoreGraphics.framework in Frameworks */,
 				C08A794E16A132A800266EBC /* CoreData.framework in Frameworks */,
 				C031EDB316C9EDE3002B397E /* libOCMock.a in Frameworks */,
-				C0EC66AF170078DD0063E49E /* libOCMock.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,110 +188,14 @@
 			path = OCMock;
 			sourceTree = "<group>";
 		};
-		C031EE0416CA822A002B397E /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				C031EE0A16CA822B002B397E /* Test Cases */,
-				C031EE0D16CA822C002B397E /* Frameworks */,
-				C031EE1016CA822C002B397E /* Libraries */,
-				C031EE0516CA822B002B397E /* Supporting Files */,
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
-		C031EE0516CA822B002B397E /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				C031EE0616CA822B002B397E /* Info.plist */,
-				C031EE0716CA822B002B397E /* Prefix.pch */,
-				C031EE0816CA822B002B397E /* GHUnitIOSTestMain.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		C031EE0A16CA822B002B397E /* Test Cases */ = {
-			isa = PBXGroup;
-			children = (
-				C031EE0B16CA822B002B397E /* Tests.m */,
-			);
-			name = "Test Cases";
-			sourceTree = "<group>";
-		};
-		C031EE0D16CA822C002B397E /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C031EE0E16CA822C002B397E /* GHUnitIOS.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C031EE1016CA822C002B397E /* Libraries */ = {
-			isa = PBXGroup;
-			children = (
-				C031EE1116CA822C002B397E /* OCMock */,
-			);
-			name = Libraries;
-			sourceTree = "<group>";
-		};
-		C031EE1116CA822C002B397E /* OCMock */ = {
-			isa = PBXGroup;
-			children = (
-				C031EE1216CA822C002B397E /* libOCMock.a */,
-				C031EE1416CA822C002B397E /* Headers */,
-			);
-			name = OCMock;
-			sourceTree = "<group>";
-		};
-		C031EE1416CA822C002B397E /* Headers */ = {
-			isa = PBXGroup;
-			children = (
-				C031EE1516CA822C002B397E /* OCMock */,
-			);
-			name = Headers;
-			sourceTree = "<group>";
-		};
-		C031EE1516CA822C002B397E /* OCMock */ = {
-			isa = PBXGroup;
-			children = (
-				C031EE1616CA822C002B397E /* OCMock.h */,
-				C031EE1716CA822C002B397E /* NSNotificationCenter+OCMAdditions.h */,
-				C031EE1816CA822C002B397E /* OCMArg.h */,
-				C031EE1916CA822C002B397E /* OCMConstraint.h */,
-				C031EE1A16CA822C002B397E /* OCMockObject.h */,
-				C031EE1B16CA822C002B397E /* OCMockRecorder.h */,
-			);
-			name = OCMock;
-			sourceTree = "<group>";
-		};
-		C046369B1703CFD90035F658 /* layoutTarget */ = {
-			isa = PBXGroup;
-			children = (
-				C046369E1703CFD90035F658 /* layoutTarget.h */,
-				C04636A01703CFD90035F658 /* layoutTarget.m */,
-				C046369C1703CFD90035F658 /* Supporting Files */,
-			);
-			path = layoutTarget;
-			sourceTree = "<group>";
-		};
-		C046369C1703CFD90035F658 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				C046369D1703CFD90035F658 /* layoutTarget-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		C08A793816A132A800266EBC = {
 			isa = PBXGroup;
 			children = (
-				C046369B1703CFD90035F658 /* layoutTarget */,
 				C08A794616A132A800266EBC /* Frameworks */,
 				C08A79D416A79FCC00266EBC /* Libraries */,
 				C031EDB616C9EE5B002B397E /* OCMock */,
 				C08A794416A132A800266EBC /* Products */,
-				C031EE0416CA822A002B397E /* Tests */,
 				C08A794F16A132A800266EBC /* weatherApp */,
-				C04636D01703D1900035F658 /* weatherApp copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -557,8 +435,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C031EE0916CA822B002B397E /* GHUnitIOSTestMain.m in Sources */,
-				C031EE0C16CA822B002B397E /* Tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

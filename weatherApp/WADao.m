@@ -20,8 +20,7 @@
     return self;
 }
 
--(void)refreshDataFromServer
-{
+-(void)refreshDataFromServer{
         // kick off the server request on a separate thread
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         
@@ -51,7 +50,7 @@
                           error:&error];
     
     //log entire json response
-    //NSArray* list = [json objectForKey:@"list"];
+    NSArray* list = [json objectForKey:@"list"];
     //NSLog(@"list: %@", list);
     
     //save low, high and avg temps to properties

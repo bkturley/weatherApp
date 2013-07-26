@@ -14,7 +14,7 @@
 
 @implementation WAView
 
-- (id)initWithFrame:(CGRect)frame
+- (id)initWithFrame:(CGRect)frame andViewController:(WARootViewController*)VC
 {
     self = [super initWithFrame:frame];
     if (self) {
