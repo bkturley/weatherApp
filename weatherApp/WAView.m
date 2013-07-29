@@ -10,6 +10,7 @@
 
 @interface WAView()
 @property UIButton* fetchButton;
+@property WARootViewController* VC;
 @end
 
 @implementation WAView
@@ -19,7 +20,11 @@
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
+        
         self.frame = frame;
+        
+        self.VC = VC;
+        
         self.backgroundColor = [UIColor lightGrayColor];
         
         //hightemplabel
@@ -77,7 +82,7 @@
 }
 
 -(void)fetchButtonTapped{
-    [[NSNotificationCenter defaultCenter] postNotificationName:fetchButtonTappedNote object:nil];
+    [self.VC fetchButtonTapped];
 }
 
 @end

@@ -7,13 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "WARootViewController.h"
 
-#define doaRequestReadyNote @"doaRequestReadyNote"
+@class WAModel;
 
 @interface WADao : NSObject
 @property NSDecimalNumber* lowtemp;
 @property NSDecimalNumber* hightemp;
 @property NSDecimalNumber* avgtemp;
+
+-(id)initWithModel:(WAModel*)model;
 
 -(void)refreshDataFromServer;
 @end

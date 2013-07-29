@@ -18,8 +18,8 @@
 -(id)init{
     self = [super init];
     if(self){
-            self.dao = [[WADao alloc] init];
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(fetchWeatherData) name:doaRequestReadyNote object:nil];
+            self.dao = [[WADao alloc] initWithModel:self];
+            //[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(fetchWeatherData) name:doaRequestReadyNote object:nil];
     }
     return  self;
 }
@@ -34,10 +34,11 @@
 //    self.avgtemp = [self.dao.avgtemp decimalNumberBySubtracting:kelvinOffset];
     self.avgtemp = self.dao.avgtemp;
     
-    [[NSNotificationCenter defaultCenter] postNotificationName:modelRequestReadyNote object:nil];
+//    [[NSNotificationCenter defaultCenter] postNotificationName:modelRequestReadyNote object:nil];
 }
 -(void) updateWeatherFromServer{
     [self.dao refreshDataFromServer];
 }
+
 
 @end

@@ -9,13 +9,21 @@
 #import "WADao.h"
 #import "WADefines.h"
 #import "WARootViewController.h"
+#import "WAModel.h"
+
+@interface WADao()
+@property (nonatomic, strong) WAModel* model;
+@end
 
 @implementation WADao
 
--(id)init{
+-(id)initWithModel:(WAModel*)model{
     self = [super init];
     if(self){
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refreshDataFromServer) name:WADao_fetchWeathDataNote object:nil];
+        
+        self.model = model;
+        
+//        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refreshDataFromServer) name:WADao_fetchWeathDataNote object:nil];
     }
     return self;
 }
@@ -60,7 +68,7 @@
     
     self.hightemp = [[[[json objectForKey:@"list"]valueForKey:@"main"]valueForKey:@"temp_max"] objectAtIndex:0];
     
-    [[NSNotificationCenter defaultCenter] postNotificationName:doaRequestReadyNote object:nil];
+    [self.model fetchWeatherData];
     
 }
 

@@ -15,4 +15,8 @@
 
 @interface WARootViewController : UIViewController
 
+-(void)fetchButtonTapped;
+-(void) updateView;
+
+
 @end

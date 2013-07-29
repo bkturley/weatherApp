@@ -27,8 +27,6 @@
         self.view = self.WAView;
         self.WAModel = [[WAModel alloc] init];
         
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(fetchButtonTapped) name:fetchButtonTappedNote object:nil];
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateView) name:modelRequestReadyNote object:nil];
     }
     return self;
 }
@@ -40,6 +38,9 @@
 }
 
 -(void)fetchButtonTapped{
-        [self.WAModel updateWeatherFromServer];}
+    [self.WAModel updateWeatherFromServer];
+    [self updateView];
+}
+
 
 @end

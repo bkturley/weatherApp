@@ -15,5 +15,9 @@
 @property NSDecimalNumber* lowtemp;
 @property NSDecimalNumber* hightemp;
 @property NSDecimalNumber* avgtemp;
+
 -(void) updateWeatherFromServer;
+-(void) fetchWeatherData;
+
+
 @end
