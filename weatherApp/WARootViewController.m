@@ -20,12 +20,12 @@
 {
     self = [super init];
     if (self) {
-        // Custom initialization
-
+        
         self.WAView = [[WAView alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame]
                                   andViewController:self];
         self.view = self.WAView;
-        self.WAModel = [[WAModel alloc] init];
+        
+        self.WAModel = [[WAModel alloc] initWithVC:self];
         
     }
     return self;
@@ -39,7 +39,6 @@
 
 -(void)fetchButtonTapped{
     [self.WAModel updateWeatherFromServer];
-    [self updateView];
 }
 
 

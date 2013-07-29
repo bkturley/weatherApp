@@ -16,6 +16,8 @@
 @property NSDecimalNumber* hightemp;
 @property NSDecimalNumber* avgtemp;
 
+
+-(id)initWithVC:(WARootViewController*)VC;
 -(void) updateWeatherFromServer;
 -(void) fetchWeatherData;
 
